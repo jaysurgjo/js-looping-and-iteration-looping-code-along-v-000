@@ -1,14 +1,19 @@
-function printBadges(badges) {
-  for (let i = 0; i < badges.length; i++){
-    console.log(`Welcome ${badges[i]}! You are employee #${i+1}.`)
-  }
-    return badges
+function printBadges(name) {
+    //([initialization];  [condition];          [iteration])
+    for (let counter = 0; counter < name.length; counter++) {
+        //[loop body]
+        console.log(`Welcome ${name[counter]}! You are employee #${counter+1}.`);
+    }               
+    return name
 }
 
-function tailsNeverFails(){
-  let count = 0
+function tailsNeverFails() {
+    let tailsCounter = 0;
+       //([condition]) 
     while (Math.random() >= 0.5) {
-      count++
+        //[loop body]
+        tailsCounter++;
+        
     }
-         return `You got ${count} tails in a row!`
- }
+    return`You got ${tailsCounter} tails in a row!`;
+}
